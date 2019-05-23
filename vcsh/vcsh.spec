@@ -45,6 +45,9 @@ make %{?_smp_mflags}
 
 
 %changelog
+* Thu May 23 2019 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20151229-0.1
+- Rebuild package for enterprise linux
+
 * Mon Feb 22 2016 Dridi Boukelmoune <dridi.boukelmoune@gmail.com> - 1.20151229-2
 - Declare %%_docdir in %%files
 
