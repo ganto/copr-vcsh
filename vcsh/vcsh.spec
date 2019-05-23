@@ -3,7 +3,7 @@
 
 Name:           vcsh
 Version:        1.20151229
-Release:        2%{?dist}
+Release:        0.1%{?dist}
 Summary:        Version Control System for $HOME
 Group:          Development/Tools
 
