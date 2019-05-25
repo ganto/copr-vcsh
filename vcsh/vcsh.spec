@@ -50,6 +50,9 @@ make %{?_smp_mflags}
 
 
 %changelog
+* Sat May 25 2019 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20151229-0.2
+- Fix build failure on epel-6
+
 * Thu May 23 2019 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20151229-0.1
 - Rebuild package for enterprise linux
 
