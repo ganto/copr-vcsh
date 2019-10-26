@@ -3,7 +3,7 @@
 
 Name:           vcsh
 Version:        1.20151229
-Release:        0.2%{?dist}
+Release:        0.3%{?dist}
 Summary:        Version Control System for $HOME
 Group:          Development/Tools
 
@@ -40,7 +40,7 @@ make %{?_smp_mflags}
 %doc LICENSE CONTRIBUTORS changelog
 %{_bindir}/%{name}
 %{_mandir}/man*/%{name}*
-# RHEL 6 doesn't support %{_docdir}
+# RHEL 6 doesn't support %%{_docdir}
 %if 0%{?rhel} && 0%{?rhel} == 6
 %doc doc/README.md doc/hooks
 %else
