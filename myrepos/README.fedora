@@ -1,0 +1,25 @@
+myrepos - Fedora related details
+--------------------------------
+myrepos supports the following SCM tools by default:
+
+- bzr
+- cvs
+- darcs
+- fossil
+- git
+- mercurial
+- subversion
+- vcsh
+- veracity *
+
+ * Not in the Fedora Package Collection
+
+To avoid installing SCM tools which the user don't need or use, only git is
+installed.
+
+To use myrepos with other SCM tools, please install the wished tools with the
+package management tool (yum/dnf):
+
+    $ sudo yum install <SCM>
+
+Replace <SCM> with a listed tool from above.
