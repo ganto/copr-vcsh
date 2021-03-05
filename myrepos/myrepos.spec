@@ -52,6 +52,9 @@ done
 %{_datadir}/mr/
 
 %changelog
+* Fri Mar 05 2021 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20180726-0.1
+- Rebuild package for enterprise linux
+
 * Tue Jan 26 2021 Fedora Release Engineering <releng@fedoraproject.org> - 1.20180726-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
 
