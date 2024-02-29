@@ -1,6 +1,6 @@
 Name:           myrepos
 Version:        1.20180726
-Release:        0.1%{?dist}
+Release:        0.2%{?dist}
 Summary:        A multiple SCM repository management tool
 
 License:        GPLv2+
@@ -16,7 +16,7 @@ BuildRequires:  make
 BuildRequires:  perl-generators
 BuildRequires:  perl-podlators
 
-Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
+Requires:       perl(File::Copy)
 # Out off the box only git is supported. For additional details the 
 # README.fedora lists the supported SCM tools. 
 Requires:       git
