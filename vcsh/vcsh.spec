@@ -1,20 +1,17 @@
-%global commit b8bd702362a260c22df3980767460190f8a0b1c1
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-
 Name:           vcsh
-Version:        1.20151229
-Release:        0.3%{?dist}
+Version:        2.0.3
+Release:        0.1%{?dist}
 Summary:        Version Control System for $HOME
-Group:          Development/Tools
 
 License:        GPLv2+
-URL:            https://github.com/RichiH/vcsh
-Source0:        https://github.com/RichiH/vcsh/archive/%{commit}/%{name}-%{version}-%{shortcommit}.tar.gz
+URL:            https://github.com/RichiH/%{name}
+Source0:        https://github.com/RichiH/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.xz
 
 BuildArch:      noarch
 Requires:       git
 
 BuildRequires:  git
+BuildRequires:  make
 
 
 %description
@@ -25,11 +22,12 @@ configs you want to use on which machine.
 
 
 %prep
-%setup -qn %{name}-%{commit}
+%setup -q
 
 
 %build
-make %{?_smp_mflags}
+%configure
+%make_build
 
 
 %install
@@ -37,16 +35,12 @@ make %{?_smp_mflags}
 
 
 %files
-%doc LICENSE CONTRIBUTORS changelog
 %{_bindir}/%{name}
 %{_mandir}/man*/%{name}*
-# RHEL 6 doesn't support %%{_docdir}
-%if 0%{?rhel} && 0%{?rhel} == 6
-%doc doc/README.md doc/hooks
-%else
-%{_docdir}/*
-%endif
+%{_datadir}/bash-completion/
 %{_datadir}/zsh/
+%{_docdir}/%{name}
+%{_defaultlicensedir}/%{name}
 
 
 %changelog
