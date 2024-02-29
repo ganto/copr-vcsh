@@ -44,6 +44,9 @@ configs you want to use on which machine.
 
 
 %changelog
+* Thu Feb 29 2024 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> - 2.0.3-0.1
+- Update to 2.0.3
+
 * Sat Oct 26 2019 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20151229-0.3
 - Rebuild for epel-8
 
