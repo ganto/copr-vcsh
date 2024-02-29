@@ -52,6 +52,9 @@ done
 %{_datadir}/mr/
 
 %changelog
+* Thu Feb 29 2024 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20180726-0.2
+- Rebuild for epel-9
+
 * Fri Mar 05 2021 Reto Gantenbein <reto.gantenbein@linuxmonk.ch> 1.20180726-0.1
 - Rebuild package for enterprise linux
 
